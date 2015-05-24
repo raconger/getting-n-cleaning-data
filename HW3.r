@@ -51,6 +51,7 @@ mergedata <- merge(gdpfilt, edudata, by.x="X", by.y="CountryCode", all=FALSE)
 head(mergedata, n=3)
 attach(mergedata)
 sortdata <- mergedata[order(-rank),]
+detach(mergedata)
 head(sortdata)
 summary(sortdata$rank)
 head(sortdata, n=13)
