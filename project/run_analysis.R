@@ -1,5 +1,8 @@
 setwd("~/GitHub/getting-n-cleaning-data/project")
 
+library(Hmisc)
+library(reshape)
+
 # ---------------------------
 # read generic data
 features <- read.table("./UCI HAR Dataset/features.txt")
